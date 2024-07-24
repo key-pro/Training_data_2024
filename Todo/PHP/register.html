@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/register.css">
+    <title>会員登録</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center align-items-center" style="height: 100vh;">
+            <div class="col-md-8">
+                <div class="registration-container">
+                    <h1>会員登録</h1>
+                    <form action="register.php" method="POST">
+                        <div class="form-group">
+                            <label for="user_name">ユーザー名</label>
+                            <input type="text" id="user_name" name="user_name" class="form-control" maxlength=50" required><br>
+                        </div>
+                        <div class="form-group">
+                            <label for="user_password">パスワード</label>
+                            <input type="password" id="user_password" name="user_password" class="form-control" maxlength="255" required><br>
+                        </div>
+                        <div class="form-group">
+                            <p>所属部署</p>
+                            <div class="form-check">
+                                <input type="radio" id="Sales_department" name="user_organization" value="1" class="form-check-input" checked>
+                                <label for="Sales_department" class="form-check-label">営業部</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" id="Buying_and_selling_department" name="user_organization" value="2" class="form-check-input" >
+                                <label for="Buying_and_selling_department" class="form-check-label">売買事業部</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" id="External_relations_department" name="user_organization" value="3" class="form-check-input" >
+                                <label for="External_relations_department" class="form-check-label">渉外課</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" id="Distribution_Section_1" name="user_organization" value="4" class="form-check-input" >
+                                <label for="Distribution_Section_1" class="form-check-label">流通1課</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" id="Distribution_Section_2" name="user_organization" value="5" class="form-check-input" >
+                                <label for="Distribution_Section_2" class="form-check-label">流通2課</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" id="Management_Division" name="user_organization" value="6" class="form-check-input" >
+                                <label for="Management_Division" class="form-check-label">管理事業部</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" id="System_Division" name="user_organization" value="7" class="form-check-input" >
+                                <label for="System_Division" class="form-check-label">システム事業部</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" id="Business_Promotion_Department" name="user_organization" value="8" class="form-check-input" >
+                                <label for="Business_Promotion_Department" class="form-check-label">事業推進部</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" id="General_Affairs/Labor_Department" name="user_organization" value="9" class="form-check-input" >
+                                <label for="General_Affairs/Labor_Department" class="form-check-label">総務・労務課</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" id="Accounting_department" name="user_organization" value="10" class="form-check-input" >
+                                <label for="Accounting_department" class="form-check-label">経理課</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" id="Corporate_Planning_Office" name="user_organization" value="11" class="form-check-input" >
+                                <label for="Corporate_Planning_Office" class="form-check-label">経営企画室</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" id="Human_Resources/Public_Relations_Division" name="user_organization" value="12" class="form-check-input" >
+                                <label for="Human_Resources/Public_Relations_Division" class="form-check-label">人事・広報課</label>
+                            </div>
+                        </div>
+                        <button type="submit" name="submit" class="btn btnshine btn-primary">登録</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" 
+        crossorigin="anonymous"></script>
+</body>
+</html>

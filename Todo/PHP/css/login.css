@@ -1,0 +1,61 @@
+ body {
+     background-color: #f8f9fa;
+ }
+
+ .login-container {
+     max-width: 400px;
+     margin: 0 auto;
+     padding: 40px;
+     background-color: #fff;
+     border-radius: 10px;
+     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+ }
+
+ .login-container h1 {
+     text-align: center;
+     margin-bottom: 30px;
+ }
+
+ .login-container .form-group {
+     margin-bottom: 20px;
+ }
+
+ .login-container .btn {
+     width: 100%;
+ }
+
+.register_btn{
+    margin: 10px;
+    margin-left: 0px;
+}
+
+/*きらっと光る*/
+.btnshine {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    outline: none;
+    overflow: hidden;
+}
+
+.btnshine::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+    transform: skewX(-25deg);
+}
+
+.btnshine:hover::before {
+    animation: shine 0.7s;
+}
+
+@keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
